@@ -12,3 +12,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 810px) {
+  .container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    position: unset;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    border-radius: 0px;
+  }
+}

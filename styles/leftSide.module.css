@@ -36,3 +36,9 @@
   text-align: center;
   font-size: 14px;
 }
+@media (max-width: 810px) {
+  .leftSide {
+    width: 100%;
+    height: 800px;
+  }
+}

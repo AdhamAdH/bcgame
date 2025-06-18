@@ -7,3 +7,9 @@
   height: 100%;
   padding: 20px 24px;
 }
+@media (max-width: 810px) {
+  .rightSide {
+    width: 100%;
+    height: auto;
+  }
+}

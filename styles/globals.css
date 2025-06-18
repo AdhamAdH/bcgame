@@ -17,3 +17,7 @@
   --color-white: #ffffff;
   --color-blue-500: #3b82f6;
 }
+
+body {
+  background-color: #282b2b7d;
+}
