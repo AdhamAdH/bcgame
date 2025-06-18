@@ -1,0 +1,38 @@
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../public/images/d45e2f9a-3aad-4eda-823c-2d53492ce7b7.png");
+  background-size: cover;
+  background-position: center;
+}
+.logo {
+  width: auto;
+  height: 32px;
+  position: absolute;
+  left: 24px;
+  top: 16px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 800;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+.bref {
+  margin-bottom: 104px;
+  margin-top: 4px;
+  font-weight: 600;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}

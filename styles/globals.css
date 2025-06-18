@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, "sans-serif";
+  color: white;
+  text-decoration: none;
+}
+
+:root {
+  --color-gray-700: #4a4a4a;
+  --color-gray-400: #b3bec1;
+  --color-gray-800: #2c2c2c;
+  --color-gray-700-hover: #3d3d3d;
+  --color-white: #ffffff;
+  --color-blue-500: #3b82f6;
+}
