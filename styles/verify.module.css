@@ -1,0 +1,115 @@
+/* الأنماط العامة للصفحة */
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #232626;
+  color: white;
+}
+
+/* الأنماط لبطاقة التحقق المركزية */
+.verificationCard {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.headerLogo {
+  margin-bottom: 30px;
+}
+
+.logoImage {
+  max-width: 80px; /* حجم الشعار */
+  height: auto;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--text-color-white);
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 16px;
+  color: var(--text-color-light);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.inputGroup {
+  margin-bottom: 25px;
+}
+
+.verificationCodeInput {
+  width: calc(100% - 30px); /* عرض الحقل مع مراعاة البادينج */
+  padding: 15px;
+  background-color: var(--input-background);
+  border: 1px solid #4f4f4f;
+  border-radius: 8px;
+  color: var(--text-color-white);
+  font-size: 20px;
+  text-align: center; /* توسيط النص داخل الحقل */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.verificationCodeInput:focus {
+  border-color: var(--accent-green-start);
+}
+
+.verificationCodeInput::placeholder {
+  color: #888888;
+}
+
+.submitButton {
+  margin-top: 24px;
+  width: 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgb(36, 238, 137),
+    rgb(159, 232, 113)
+  );
+  box-shadow: rgba(35, 238, 136, 0.3) 0px 0px 12px,
+    rgb(29, 202, 106) 0px -2px inset;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.submitButtonSpan {
+  color: #000000;
+  font-weight: 800;
+}
+
+.linksSection {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.resendText {
+  color: var(--text-color-light);
+  margin-bottom: 10px;
+}
+
+.resendLink,
+.backLink {
+  color: var(--accent-green-start);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.resendLink:hover,
+.backLink:hover {
+  color: var(--accent-green-end);
+  text-decoration: underline;
+}

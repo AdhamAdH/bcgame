@@ -2,19 +2,17 @@
 
 import styles from "@/styles/signinForm.module.css";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const SigninForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("");
-  const [error, setError] = useState("");
+  const router = useRouter();
 
   const handleRegister = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setMessage("");
-    setError("");
 
     try {
       const response = await fetch("/api/auth/register", {
@@ -28,17 +26,17 @@ const SigninForm = () => {
       const data = await response.json();
 
       if (response.ok) {
-        setMessage(data.message);
+        localStorage.setItem("userEmailForVerification", email);
         setEmail("");
         setPassword("");
-        // router.push('/login');
+        router.push(`/verify`);
       } else {
-        setError(data.message || "Registration failed");
+        console.error("Registration failed:");
       }
     } catch (err) {
       console.error("Network error or unexpected issue:", err);
       console.log(email, password);
-      setError("An unexpected error occurred. Please try again.");
+      console.log(err);
     } finally {
       setLoading(false);
     }
